@@ -70,6 +70,7 @@ public class SecurityConfig {
                     "/api/user/login.do",
                     "/api/user/logout.do",
                     "/api/user/register.do",
+                    "/api/user/join.do",
                     "/api/file/down.do",
                     "/api/file/imgDown.do",
                     "/api/file/imgUpload.do"

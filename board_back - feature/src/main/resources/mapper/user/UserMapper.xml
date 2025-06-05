@@ -12,6 +12,7 @@
 	                B.USER_ID,
 	            	B.USERNAME,
 	            	B.PASSWORD,
+	            	B.NICKNAME,
 	            	B.EMAIL,
 			        B.CREATE_ID,
 			        B.UPDATE_ID,
@@ -23,6 +24,7 @@
 		            	A.USER_ID,
 		            	A.USERNAME,
 		            	A.PASSWORD,
+		            	A.NICKNAME,
 		            	A.EMAIL,
 				        A.CREATE_ID,
 				        A.UPDATE_ID,
@@ -99,8 +101,8 @@
 
     <!-- 사용자 생성 -->
     <insert id="registerUser" parameterType="back.model.user.User">
-        INSERT INTO USERS (USER_ID, USERNAME, PASSWORD, EMAIL, CREATE_ID)
-        VALUES (#{userId}, #{username}, #{password}, #{email}, #{createId})
+        INSERT INTO USERS (USER_ID,NICKNAME, USERNAME, PASSWORD, EMAIL, CREATE_ID)
+        VALUES (#{userId},#{nickname}, #{username}, #{password}, #{email}, #{createId})
     </insert>
 
     <!-- 사용자 업데이트 -->
